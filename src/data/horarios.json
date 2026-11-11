@@ -1,0 +1,126 @@
+{
+  "medicos": [
+    {
+      "id": 1,
+      "nombre": "Dr. Alejandro Siebert Eller",
+      "especialidad": "Oftalmología General, Glaucoma, Retina",
+      "sucursal": "Oftalmontt Puerto Montt",
+      "previsiones": ["Fonasa", "Particular"],
+      "fechas": {
+        "2026-11-17": ["09:20", "10:40"],
+        "2026-11-19": ["09:00", "11:30", "15:00"],
+        "2026-11-24": ["10:00", "10:30"]
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "Dr. Diego Ossandon Villaseca",
+      "especialidad": "Oftalmología General, Oftalmopediatría",
+      "sucursal": "Oftalmontt Puerto Montt",
+      "previsiones": ["Fonasa", "Isapre", "Particular", "Otro"],
+      "fechas": {
+        "2026-11-17": ["08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00"],
+        "2026-11-18": ["09:00", "09:30", "14:20"],
+        "2026-11-20": ["08:30", "10:00", "12:00"],
+        "2026-11-25": ["15:00", "15:30", "16:00"]
+      }
+    },
+    {
+      "id": 3,
+      "nombre": "Dr. Ignacio Alfaro Quezada",
+      "especialidad": "Córnea, Catarata y Cirugía Refractiva",
+      "sucursal": "Oftalmontt Puerto Varas",
+      "previsiones": ["Isapre", "Particular", "Otro"],
+      "fechas": {
+        "2026-11-18": ["10:30", "11:00", "15:30"],
+        "2026-11-19": ["09:00", "09:30"],
+        "2026-11-23": ["14:00", "14:30", "16:00"],
+        "2026-11-26": ["08:30", "11:00"]
+      }
+    },
+    {
+      "id": 4,
+      "nombre": "Dr. Pedro Bórquez Vera",
+      "especialidad": "Oftalmología General, Oculoplástica",
+      "sucursal": "Oftalmontt Puerto Varas",
+      "previsiones": ["Fonasa", "Particular"],
+      "fechas": {
+        "2026-11-17": ["15:00", "15:30", "16:00"],
+        "2026-11-20": ["09:00", "10:00"],
+        "2026-11-27": ["11:30", "12:00"]
+      }
+    },
+    {
+      "id": 5,
+      "nombre": "Dr. Juan Pablo Márquez Doren",
+      "especialidad": "Oftalmología General, Córnea, Glaucoma",
+      "sucursal": "Oftalmontt Puerto Montt",
+      "previsiones": ["Fonasa", "Isapre", "Particular"],
+      "fechas": {
+        "2026-11-17": ["08:30", "09:00"],
+        "2026-11-19": ["10:00", "10:30", "11:00"],
+        "2026-11-24": ["14:00", "15:00"]
+      }
+    },
+    {
+      "id": 6,
+      "nombre": "Dr. Javier Yáñez Alarcón",
+      "especialidad": "Oftalmología General, Glaucoma, Córnea",
+      "sucursal": "Oftalmontt Puerto Varas",
+      "previsiones": ["Isapre", "Particular"],
+      "fechas": {
+        "2026-11-18": ["11:30", "12:00"],
+        "2026-11-20": ["15:00", "15:30", "16:30"],
+        "2026-11-25": ["09:00", "09:30"]
+      }
+    },
+    {
+      "id": 7,
+      "nombre": "Dr. Carlos Bachmann Galle",
+      "especialidad": "Neuroftalmología, Superficie Ocular",
+      "sucursal": "Oftalmontt Puerto Montt",
+      "previsiones": ["Fonasa", "Isapre", "Otro"],
+      "fechas": {
+        "2026-11-18": ["08:30", "09:00", "10:00"],
+        "2026-11-23": ["11:00", "11:30"],
+        "2026-11-26": ["14:00", "15:00"]
+      }
+    },
+    {
+      "id": 8,
+      "nombre": "Dr. Andrés Contreras Oros",
+      "especialidad": "Oftalmología General, Glaucoma",
+      "sucursal": "Oftalmontt Puerto Varas",
+      "previsiones": ["Fonasa", "Particular", "Otro"],
+      "fechas": {
+        "2026-11-17": ["10:30", "11:00"],
+        "2026-11-19": ["15:30", "16:00", "16:30"],
+        "2026-11-27": ["08:30", "09:30"]
+      }
+    },
+    {
+      "id": 9,
+      "nombre": "Dr. Claudio Zúñiga Cossio",
+      "especialidad": "Córnea, Catarata y Cirugía Refractiva",
+      "sucursal": "Oftalmontt Puerto Montt",
+      "previsiones": ["Isapre", "Particular"],
+      "fechas": {
+        "2026-11-20": ["10:00", "11:00", "11:30"],
+        "2026-11-24": ["15:00", "15:30"],
+        "2026-11-25": ["08:30", "09:00"]
+      }
+    },
+    {
+      "id": 10,
+      "nombre": "Dr. Cristian Águila Rebolledo",
+      "especialidad": "Oftalmología General, Retina",
+      "sucursal": "Oftalmontt Puerto Varas",
+      "previsiones": ["Fonasa", "Isapre", "Particular", "Otro"],
+      "fechas": {
+        "2026-11-18": ["15:00", "15:30", "16:00"],
+        "2026-11-23": ["09:00", "09:30", "10:00"],
+        "2026-11-26": ["11:00", "11:30"]
+      }
+    }
+  ]
+}

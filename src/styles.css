@@ -1,0 +1,469 @@
+:root {
+  --oftalmo-cyan: #269BAB;
+  --oftalmo-cyan-hover: #1F7F8C;
+  --oftalmo-dark: #1B3A5C;
+  --oftalmo-light: #E0F2F4;
+  --oftalmo-nav-bg: #7BC0C4;
+  --bg-color: #f4f7f9;
+  --text-color: #333;
+  --success-green: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* --- HEADER ESTILO OFTALMONTT --- */
+.oftalmo-topbar-wrapper { background-color: #E0F2F4; width: 100%; }
+.oftalmo-topbar {
+  max-width: 1250px;
+  margin: 0 auto;
+  color: #269BAB;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.oftalmo-header-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative; 
+  z-index: 1000;
+}
+
+.oftalmo-header {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.oftalmo-logo img { height: 65px; object-fit: contain; }
+
+.oftalmo-nav {
+  background-color: var(--oftalmo-nav-bg);
+  border-radius: 8px;
+  display: flex;
+  padding: 0;
+}
+
+.oftalmo-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.oftalmo-nav a:hover { background-color: rgba(255, 255, 255, 0.2); }
+.oftalmo-nav a:first-child { border-radius: 8px 0 0 8px; }
+.oftalmo-nav a:last-child { border-radius: 0 8px 8px 0; }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--oftalmo-cyan);
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+/* --- FOOTER ESTILO OFTALMONTT --- */
+.oftalmo-footer {
+  background-color: #269BAB;
+  color: #ffffff;
+  padding: 40px 15px;
+  width: 100%;
+}
+.footer-content {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-logo img {
+  height: 75px;
+  margin-bottom: 10px;
+  filter: brightness(0) invert(1);
+}
+.footer-logo h2 { margin: 0; font-weight: 300; letter-spacing: 2px; }
+.footer-col p { margin-bottom: 10px; }
+.footer-col strong { font-weight: 600; }
+
+/* --- PANTALLA 1: BUSCADOR --- */
+.pantalla-buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.buscador-card {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 550px;
+}
+
+.buscador-card h1 { color: var(--oftalmo-dark); margin-top: 0; text-align: center; font-size: 1.8rem;}
+.buscador-card p { text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.95rem;}
+.buscador-card label { display: block; font-weight: 600; color: var(--oftalmo-dark); margin-bottom: 0.5rem; margin-top: 1.2rem; font-size: 0.95rem;}
+
+.btn-buscar {
+  width: 100%;
+  background: var(--oftalmo-cyan);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-buscar:hover { background: var(--oftalmo-cyan-hover); }
+
+/* --- PANTALLA 2: RESULTADOS --- */
+.top-bar-resultados {
+  background-color: var(--oftalmo-light);
+  color: var(--oftalmo-cyan);
+  padding: 12px 20px;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.95rem;
+}
+.btn-volver {
+  background: transparent;
+  border: 1px solid var(--oftalmo-cyan);
+  color: var(--oftalmo-cyan);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.btn-volver:hover { background: var(--oftalmo-cyan); color: #fff; }
+
+/* --- LAYOUT PRINCIPAL --- */
+.layout-principal {
+  display: flex;
+  max-width: 1250px; 
+  margin: 2.5rem auto;
+  gap: 2.5rem;
+  padding: 0 15px;
+  align-items: flex-start; 
+}
+
+.columna-medicos { flex: 1.7; } 
+.columna-calendario { flex: 1; min-width: 350px; } 
+
+.titulo-fecha { 
+  color: var(--oftalmo-dark); 
+  font-size: 1.2rem; 
+  margin-bottom: 1.5rem; 
+  text-transform: uppercase; 
+  border-bottom: 2px solid var(--oftalmo-cyan);
+  padding-bottom: 0.5rem;
+}
+
+/* --- TARJETAS DE MÉDICOS --- */
+.tarjeta-medico {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e1e8ed;
+  display: flex;
+  flex-direction: column;
+  height: 400px; 
+}
+
+.medico-header {
+  background-color: var(--oftalmo-cyan);
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.badge-sucursal {
+  flex-grow: 1; 
+  text-align: right; 
+  padding-left: 1.5rem; 
+}
+
+.medico-body {
+  display: flex;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-bottom: 1px solid #f0f0f0;
+  height: 185px; 
+}
+
+.medico-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: var(--oftalmo-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--oftalmo-cyan);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+.medico-avatar svg { width: 38px; height: 38px; }
+
+.medico-info h3 { margin: 0 0 0.3rem 0; color: var(--oftalmo-dark); font-size: 1.15rem; }
+.especialidad { color: var(--oftalmo-cyan); font-weight: 700; margin: 0 0 0.5rem 0; font-size: 0.9rem; }
+.convenios { color: #666; font-size: 0.85rem; margin: 0; }
+
+/* --- CAJA DE HORARIOS --- */
+.medico-horarios {
+  padding: 1.2rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); 
+  gap: 0.6rem;
+  align-content: flex-start;
+  flex-grow: 1; 
+  overflow-y: auto; 
+}
+
+.medico-horarios::-webkit-scrollbar { width: 6px; }
+.medico-horarios::-webkit-scrollbar-track { background: transparent; }
+.medico-horarios::-webkit-scrollbar-thumb { background-color: #d0dce8; border-radius: 10px; }
+.medico-horarios::-webkit-scrollbar-thumb:hover { background-color: var(--oftalmo-cyan); }
+
+.btn-hora-lista {
+  background: #fff;
+  color: var(--oftalmo-cyan);
+  border: 1px solid var(--oftalmo-cyan);
+  padding: 0.6rem 0.2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+  text-align: center;
+  width: 100%;
+}
+.btn-hora-lista:hover { background: var(--oftalmo-cyan); color: #fff; }
+
+/* --- CALENDARIO  --- */
+.calendario-widget {
+  background: #fff;
+  padding: 1.8rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e1e8ed;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendario-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem; 
+  color: var(--oftalmo-dark);
+}
+
+.calendario-header h3 { margin: 0; font-size: 1.15rem; text-transform: capitalize;}
+
+.btn-nav { background: none; border: none; font-size: 1.3rem; color: #ccc; cursor: not-allowed; }
+.btn-nav.activo { color: var(--oftalmo-cyan); cursor: pointer; }
+.btn-nav.activo:hover { color: var(--oftalmo-dark); }
+
+.calendario-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.3rem; 
+  text-align: center;
+}
+
+.dia-semana { font-size: 0.8rem; color: #888; font-weight: 700; margin-bottom: 0.5rem; }
+.dia-mes { 
+  padding: 0.6rem 0; 
+  border-radius: 50%; 
+  font-size: 1rem; 
+  cursor: default; 
+  user-select: none; 
+}
+.dia-mes.disponible { color: var(--oftalmo-cyan); font-weight: 700; cursor: pointer; }
+.dia-mes.disponible:hover { background: var(--oftalmo-light); }
+.dia-mes.no-disponible { color: #ccc; }
+.dia-mes.seleccionado { background: var(--oftalmo-dark) !important; color: #fff !important; }
+
+/* --- INPUTS Y MODALES --- */
+select, input {
+  width: 100%; font-size: 0.95rem; padding: 0.8rem;
+  border: 1px solid #ccc; border-radius: 6px; margin-bottom: 0.5rem;
+  font-family: inherit;
+}
+select:focus, input:focus { outline: none; border-color: var(--oftalmo-cyan); }
+
+
+.modal { position: fixed; inset: 0; background: rgba(27, 58, 92, 0.7); display: flex; align-items: center; justify-content: center; padding: 1rem; z-index: 9999; }
+.modal-contenido { background: #fff; border-radius: 10px; width: 100%; max-width: 600px; max-height: 90vh; overflow-y: auto; }
+.modal-resumen { background: var(--oftalmo-light); padding: 1.5rem; border-bottom: 1px solid #d0e8eb; }
+.modal-resumen h2 { margin: 0 0 1rem 0; color: var(--oftalmo-dark); font-size: 1.2rem; }
+.resumen-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; font-size: 0.9rem; color: var(--oftalmo-dark); }
+.resumen-grid p { margin: 0; }
+
+form { padding: 1.5rem; }
+form h3 { margin: 0 0 1rem 0; color: var(--oftalmo-dark); font-size: 1.1rem; }
+
+.acciones { display: flex; gap: 1rem; margin-top: 1rem; }
+button[type="submit"] { background: var(--oftalmo-nav-bg); color: #fff; border: none; padding: 0.8rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.95rem;}
+button[type="submit"]:hover { background: var(--oftalmo-cyan); }
+button[type="button"] { background: #e0e0e0; color: #333; border: none; padding: 0.8rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.95rem;}
+.error { color: #d9534f; background: #fdf2f2; padding: 0.8rem; border-radius: 6px; margin-bottom: 1rem; text-align: center; }
+
+/* --- PANTALLA DE ÉXITO --- */
+.contenedor { max-width: 600px; margin: 4rem auto; padding: 2rem; background: #fff; border-radius: 10px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+.exito h1 { color:#1F7F8C; font-size: 1.5rem; margin-top: 0;}
+
+.btn-nueva-reserva {
+  background-color: var(--oftalmo-nav-bg);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 1.5rem;
+}
+
+.btn-nueva-reserva:hover { background-color: var(--oftalmo-cyan); }
+
+/* --- RESPONSIVO --- */
+@media (max-width: 1200px) {
+  .columna-calendario { min-width: 320px; }
+  .medico-horarios { grid-template-columns: repeat(6, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .menu-toggle { display: block; }
+
+  .oftalmo-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .oftalmo-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--oftalmo-nav-bg);
+    flex-direction: column;
+    border-radius: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .oftalmo-nav.abierto { display: flex; }
+
+  .oftalmo-nav a {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .oftalmo-nav a:first-child,
+  .oftalmo-nav a:last-child { border-radius: 0; }
+
+  .oftalmo-topbar { flex-direction: column; text-align: center; gap: 5px; padding: 10px; }
+  .footer-content { flex-direction: column; text-align: center; align-items: center; }
+  
+  .layout-principal { 
+    flex-direction: column-reverse; 
+    gap: 2rem;
+    align-items: center; 
+    width: 100%;
+  }
+
+  .columna-medicos, 
+  .columna-calendario {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .resumen-grid { grid-template-columns: 1fr; }
+
+  .tarjeta-medico {
+    height: auto;
+    min-height: 400px; 
+  }
+
+  .medico-body {
+    height: auto;
+    padding-bottom: 1.5rem;
+  }
+
+  .medico-horarios {
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 100px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .medico-horarios {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
